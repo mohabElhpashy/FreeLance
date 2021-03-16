@@ -6,6 +6,7 @@ import HomePage from "../src/Components/HomePage/HomePage";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import LoginPage from "./Components/Login_SignUp/Login_sign";
+import Tkarer from "./Components/Eltkarer/Eltkarer";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Switch>
             <Route path="/Home" exact component={HomePage} />
             <Route path="/" exact component={LoginPage} />
+            <Route path="/Tkarer" exact component={Tkarer} />
           </Switch>
         </Router>
       </div>

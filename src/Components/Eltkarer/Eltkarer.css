@@ -1,0 +1,37 @@
+.cont {
+  width: 47.514%;
+  height: 400px;
+  /* background-color: gainsboro; */
+  margin: 151px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  border: 1px solid gainsboro;
+  box-shadow: -5px -5px 10px gray;
+}
+
+.inner_cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.first {
+  width: 70px;
+  background: url("../../images/elmsrofaat2.PNG");
+  height: 143px;
+  background-repeat: no-repeat;
+}
+
+.second {
+  width: 70px;
+  background: url("../../images/elwaedat2.PNG");
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.third {
+  width: 70px;
+  background: url("../../images/Elhalk.PNG");
+  height: 143px;
+  background-repeat: no-repeat;
+}
