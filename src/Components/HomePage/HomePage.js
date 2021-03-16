@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-import { Navbar, FormControl, Form } from "react-bootstrap";
+// import { Navbar, FormControl, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsFillPersonFill } from "react-icons/bs";
 

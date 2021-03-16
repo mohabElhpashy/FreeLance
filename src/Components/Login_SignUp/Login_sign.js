@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 class SignIN extends Component {
   validate = () => {
-    window.location = "http://localhost:3000/Home";
+    window.location = "/Home";
   };
 
   render() {
