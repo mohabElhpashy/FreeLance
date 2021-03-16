@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  /* margin: 30px auto; */
+}
+.Group-6 {
+  width: 604.2px;
+  height: 441px;
+  /* margin: 30.8px 0 137.9px 170.7px; */
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+.Rectangle-3 {
+  width: 50%;
+  height: 513px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 41px 150px 15px;
+  object-fit: contain;
+  opacity: 1.44;
+  background-color: #000000;
+  background-image: url("../src/images/stil-ck0i9Dnjtj0-unsplash.png");
+  background-repeat: no-repeat;
+  background-size: 690px;
+  border-radius: 15px;
+}
+
+.placeholder {
+  margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .Signin {
+    margin-left: 0px;
+  }
+}
