@@ -12,6 +12,10 @@ import "aos/dist/aos.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 class SignIN extends Component {
+  validate = () => {
+    window.location = "http://localhost:3000/Home";
+  };
+
   render() {
     return (
       <div className="MAin">
@@ -59,7 +63,7 @@ class SignIN extends Component {
                   <BsFillUnlockFill color="gray" size={17} />{" "}
                   <input type="password" name="" placeholder={"Password"} />
                   <br />
-                  <input type="submit" value="Login" />
+                  <input onClick={this.validate} type="submit" value="Login" />
                 </Form>
               </div>
             </div>

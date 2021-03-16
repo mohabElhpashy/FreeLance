@@ -1,0 +1,93 @@
+.Homepage {
+  width: 100%;
+  /* background-color: gray; */
+}
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #7f29e2;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  width: 47.514%;
+  height: 400px;
+  /* background-color: gainsboro; */
+  margin: 151px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content div:hover {
+  cursor: pointer;
+}
+.one {
+  width: 140px;
+  margin-top: 30px;
+  background: url("../../images/mordeen.PNG");
+  /* width: 84px; */
+  margin-left: 10px;
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.two {
+  background: url("../../images/montagat.PNG");
+  width: 140px;
+  margin-top: 30px;
+
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.three {
+  background: url("../../images/nokt_ebe3.PNG");
+  width: 140px;
+
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.four {
+  background: url("../../images/elm5zn.PNG");
+  width: 140px;
+  height: 143px;
+  margin-top: 30px;
+
+  background-repeat: no-repeat;
+}
+.five {
+  background: url("../../images/elwaredat.PNG");
+  width: 140px;
+  height: 143px;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+.six {
+  background: url("../../images/a3dadat.PNG");
+  width: 84px;
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.seven {
+  background: url("../../images/elmasrofat.PNG");
+  width: 84px;
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.eight {
+  background: url("../../images/elgrd.PNG");
+  width: 84px;
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.nine {
+  background: url("../../images/eltkarer.PNG");
+  width: 84px;
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.ten {
+  background: url("../../images/5roog.PNG");
+  width: 84px;
+  height: 143px;
+  background-repeat: no-repeat;
+}
