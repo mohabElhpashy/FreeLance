@@ -16,17 +16,22 @@ function Home() {
         <h4 style={{ marginRight: "30px", color: "white" }}>الصفحه الرئيسيه</h4>
       </nav>
       <div className="content">
-        <div className="one"></div>
-        <div className="two"></div>
-        <div className="three"></div>
-        <div className="four"></div>
-        <div className="five"></div>
-        <br />
-        <div className="six"></div>
-        <div className="seven"></div>
-        <div className="eight"></div>
-        <div className="nine"></div>
-        <div className="ten"></div>
+        <div className="xx">
+          <div className="one"></div>
+          <div className="two"></div>
+          <div className="three"></div>
+          <div className="four"></div>
+          <div className="five"></div>
+        </div>
+
+        <div className="xx">
+          {" "}
+          <div className="six"></div>
+          <div className="seven"></div>
+          <div className="eight"></div>
+          <div className="nine"></div>
+          <div className="ten"></div>
+        </div>
       </div>
     </div>
   );
