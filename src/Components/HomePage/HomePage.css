@@ -3,7 +3,10 @@
   /* background-color: gray; */
 }
 .nav {
+  position: fixed;
+  top: 0;
   width: 100%;
+  position: fixed;
   height: 80px;
   background-color: #7f29e2;
   padding-top: 15px;

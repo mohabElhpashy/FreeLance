@@ -35,3 +35,8 @@
   height: 143px;
   background-repeat: no-repeat;
 }
+.date_picker {
+  width: 63%;
+  display: flex;
+  justify-content: space-around;
+}

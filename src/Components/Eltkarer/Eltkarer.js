@@ -1,11 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Eltkarer.css";
 // import { Navbar, FormControl, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
+import Datepicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 function Eltkarer() {
+  const [selectDate, setselectDate] = useState(new Date());
+  const elwardat = () => {
+    window.location = "/Tkarer/Elwardat";
+  };
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -46,11 +54,32 @@ function Eltkarer() {
         </h4>
       </nav>
       <div className="cont">
-        <h3>تعريف التقارير</h3>
+        <h3 style={{ color: "#616161" }}>تعريف التقارير</h3>
+
         <div className="inner_cont">
           <div className="first"></div>
-          <div className="second"></div>
+          <div className="second" onClick={elwardat}></div>
           <div className="third"></div>
+        </div>
+        <div className="date_picker">
+          <div>
+            <h6>إلي</h6>
+            <Datepicker
+              selected={selectDate}
+              onChange={(date) => setselectDate(date)}
+              dateFormat="dd/MM/yy"
+              //   minDate={new Date()}
+            />
+          </div>
+          <div>
+            <h6>من</h6>
+
+            <Datepicker
+              selected={selectDate}
+              onChange={(date) => setselectDate(date)}
+              dateFormat="dd/MM/yy"
+            />
+          </div>
         </div>
       </div>
     </div>
