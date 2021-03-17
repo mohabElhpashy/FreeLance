@@ -56,7 +56,7 @@ function Eltkarer() {
       <div className="cont">
         <h3 style={{ color: "#616161" }}>تعريف التقارير</h3>
 
-        <div className="inner_cont">
+        <div data-aos="flip-left" className="inner_cont">
           <div className="first"></div>
           <div className="second" onClick={elwardat}></div>
           <div className="third"></div>

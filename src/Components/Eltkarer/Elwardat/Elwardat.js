@@ -72,7 +72,7 @@ function Elwardat() {
             <h3 style={{ color: " #757575", marginRight: "40px" }}>الواردات</h3>
           </div>
         </div>
-        <nav className="navbarrr" expand="lg">
+        <nav data-aos="fade-down" className="navbarrr" expand="lg">
           <img style={{ marginLeft: "56px" }} src={Tba3a} alt="" />
           <Form inline>
             <img style={{ marginRight: "30px" }} src={Del} alt="" />
@@ -99,7 +99,7 @@ function Elwardat() {
           </Form>{" "}
         </nav>
       </div>
-      <div className="table">
+      <div data-aos="fade-up" className="table">
         <div className="table_header">
           <p>المورد</p>
           <p>الوقت</p>
