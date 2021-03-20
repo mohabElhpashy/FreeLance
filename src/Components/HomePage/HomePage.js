@@ -14,6 +14,12 @@ function Home() {
   const tkarer = () => {
     window.location = "Tkarer";
   };
+  const grd = () => {
+    window.location = "Elgard";
+  };
+  const Elm5zn = () => {
+    window.location = "Store";
+  };
   return (
     <div className="Homepage">
       <nav className="nav">
@@ -39,7 +45,11 @@ function Home() {
           <div data-aos="fade-down-right" className="one"></div>
           <div data-aos="fade-down-right" className="two"></div>
           <div data-aos="fade-down-right" className="three"></div>
-          <div data-aos="fade-down-right" className="four"></div>
+          <div
+            onClick={Elm5zn}
+            data-aos="fade-down-right"
+            className="four"
+          ></div>
           <div data-aos="fade-down-right" className="five"></div>
         </div>
 
@@ -47,7 +57,7 @@ function Home() {
           {" "}
           <div data-aos="fade-up-left" className="six"></div>
           <div data-aos="fade-up-left" className="seven"></div>
-          <div data-aos="fade-up-left" className="eight"></div>
+          <div onClick={grd} data-aos="fade-up-left" className="eight"></div>
           <div data-aos="fade-up-left" onClick={tkarer} className="nine"></div>
           <div data-aos="fade-up-left" className="ten"></div>
         </div>

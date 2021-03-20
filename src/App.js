@@ -7,6 +7,9 @@ import HomePage from "../src/Components/HomePage/HomePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LoginPage from "./Components/Login_SignUp/Login_sign";
 import Tkarer from "./Components/Eltkarer/Eltkarer";
+import Elgard from "./Components/Elgard/Elgard";
+import Elm5zn from "./Components/Elm5zn/Elm5zn";
+
 import Elwardat from "./Components/Eltkarer/Elwardat/Elwardat";
 
 class App extends Component {
@@ -18,6 +21,9 @@ class App extends Component {
             <Route path="/Home" exact component={HomePage} />
             <Route path="/" exact component={LoginPage} />
             <Route path="/Tkarer" exact component={Tkarer} />
+            <Route path="/Elgard" exact component={Elgard} />
+            <Route path="/Store" exact component={Elm5zn} />
+
             <Route path="/Tkarer/Elwardat" exact component={Elwardat} />
           </Switch>
         </Router>

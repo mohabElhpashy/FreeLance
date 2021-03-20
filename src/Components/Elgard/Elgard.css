@@ -1,0 +1,19 @@
+.firstt {
+  width: 70px;
+  background: url("../../images/daily_gard.PNG");
+  height: 143px;
+  background-repeat: no-repeat;
+}
+
+.secondd {
+  width: 70px;
+  background: url("../../images/yearly_gard.PNG");
+  height: 143px;
+  background-repeat: no-repeat;
+}
+.thirdd {
+  width: 70px;
+  background: url("../../images/monthly_gard.PNG");
+  height: 143px;
+  background-repeat: no-repeat;
+}

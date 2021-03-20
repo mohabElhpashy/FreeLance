@@ -1,0 +1,16 @@
+.navbarrrr {
+  width: 80%;
+  /* height: 80px; */
+  margin: auto;
+  background-color: #8060a5;
+  border-radius: 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 1;
+}
+.main_divv {
+  margin-top: 140px;
+}

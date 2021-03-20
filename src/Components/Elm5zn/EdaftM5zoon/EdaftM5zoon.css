@@ -1,0 +1,93 @@
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal_content {
+  padding: 20px;
+  background-color: #6006c5;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 2rem;
+  margin-top: 130px;
+  position: relative;
+  width: 800px;
+  height: 443px;
+  box-shadow: -5px -5px 10px gainsboro;
+  justify-self: center;
+}
+.header {
+  text-align: center;
+}
+.header h2 {
+  color: white;
+}
+
+.portal_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portal_content div {
+  width: 50%;
+  /* background-color: gainsboro; */
+  margin-left: 2px;
+}
+.portal_content div input,
+select {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid white;
+}
+.right__div {
+  direction: rtl;
+}
+.xnxx {
+  display: flex;
+}
+.right__div div {
+  width: 60%;
+  /* direction: rtl; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  margin-right: 62px;
+  margin-top: 6px;
+}
+.right__div h6 {
+  margin-left: 309px;
+  color: white;
+}
+.left__div {
+  direction: rtl;
+}
+.left__div div {
+  width: 60%;
+  /* direction: rtl; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  margin-right: 62px;
+  margin-top: 6px;
+}
+.left__div h6 {
+  margin-left: 200px;
+  color: white;
+}
+
+#buttt {
+  display: flex;
+  margin-left: 56px;
+}
+#buttt button {
+  margin-left: 30px;
+  width: 97px;
+}
