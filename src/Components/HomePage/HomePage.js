@@ -20,6 +20,9 @@ function Home() {
   const Elm5zn = () => {
     window.location = "Store";
   };
+  const Elmordeen = () => {
+    window.location = "Elmordeen";
+  };
   return (
     <div className="Homepage">
       <nav className="nav">
@@ -42,7 +45,11 @@ function Home() {
       </nav>
       <div className="content">
         <div className="xx">
-          <div data-aos="fade-down-right" className="one"></div>
+          <div
+            data-aos="fade-down-right"
+            className="one"
+            onClick={Elmordeen}
+          ></div>
           <div data-aos="fade-down-right" className="two"></div>
           <div data-aos="fade-down-right" className="three"></div>
           <div
