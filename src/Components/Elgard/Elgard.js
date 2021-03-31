@@ -6,11 +6,13 @@ import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
 import Datepicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
-
+import Homee from "../../hooks/HomeRouter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function Elgard() {
   const [selectDate, setselectDate] = useState(new Date());
+  const [GoTo] = Homee();
+
   //   const elwardat = () => {
   //     window.location = "/Tkarer/Elwardat";
   //   };
@@ -42,6 +44,7 @@ function Elgard() {
           {" "}
           التقارير{" "}
           <BsFillHouseDoorFill
+            onClick={GoTo}
             style={{
               marginRight: "20px",
               //   color: "#7f29e2",

@@ -1,0 +1,80 @@
+.main_divv_Elmontagat {
+  background-color: white;
+  width: 70%;
+  height: 500px;
+  margin: auto;
+  margin-top: 120px;
+}
+.head_div {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.head_div div {
+  background-color: white;
+  width: 49%;
+  border-radius: 15px;
+  border: 1px solid gainsboro;
+  box-shadow: -5px -5px 5px gainsboro;
+}
+.bot_div {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+}
+.nannan {
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  background-color: #7f29e2;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.tablee {
+  width: 100%;
+  margin: auto;
+  margin-top: 12px;
+  background-color: gainsboro;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.rightt_divv {
+  display: inline-block;
+}
+.rightt_divv div {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.Leftt_divv {
+  display: inline-block;
+}
+.Leftt_divv div {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.sec {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid white;
+}
+.sec input {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+}

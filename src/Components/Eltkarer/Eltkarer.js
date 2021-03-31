@@ -9,8 +9,12 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Homee from "../../hooks/HomeRouter";
+
 function Eltkarer() {
   const [selectDate, setselectDate] = useState(new Date());
+  const [GoTo] = Homee();
+
   const elwardat = () => {
     window.location = "/Tkarer/Elwardat";
   };
@@ -42,6 +46,7 @@ function Eltkarer() {
           {" "}
           التقارير{" "}
           <BsFillHouseDoorFill
+            onClick={GoTo}
             style={{
               marginRight: "20px",
               //   color: "#7f29e2",

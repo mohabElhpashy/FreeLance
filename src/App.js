@@ -9,9 +9,9 @@ import LoginPage from "./Components/Login_SignUp/Login_sign";
 import Tkarer from "./Components/Eltkarer/Eltkarer";
 import Elgard from "./Components/Elgard/Elgard";
 import Elm5zn from "./Components/Elm5zn/Elm5zn";
-
 import Elwardat from "./Components/Eltkarer/Elwardat/Elwardat";
 import Elmordeen from "./Components/Elmordeen.js/Elomrdeen";
+import Elmontagat from "./Components/Elmontagat/Elmontagat";
 
 class App extends Component {
   render() {
@@ -25,8 +25,8 @@ class App extends Component {
             <Route path="/Elgard" exact component={Elgard} />
             <Route path="/Store" exact component={Elm5zn} />
             <Route path="/Elmordeen" exact component={Elmordeen} />
-
             <Route path="/Tkarer/Elwardat" exact component={Elwardat} />
+            <Route path="/Elmontagat" exact component={Elmontagat} />
           </Switch>
         </Router>
       </div>

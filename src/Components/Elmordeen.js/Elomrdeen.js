@@ -14,12 +14,14 @@ import Edit from "../../images/edit.PNG";
 import Del from "../../images/delete.PNG";
 import Edaft from "../../images/Edaftmord.PNG";
 import EdaftMord from "../Elmordeen.js/EdafrMord/Edaftmord";
+import Homee from "../../hooks/HomeRouter";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Elmordeen() {
   const [state, Setstate] = useState(false);
+  const [GoTo] = Homee();
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -48,6 +50,7 @@ function Elmordeen() {
           {" "}
           الموردين{" "}
           <BsFillHouseDoorFill
+            onClick={GoTo}
             style={{
               marginRight: "20px",
               //   color: "#7f29e2",

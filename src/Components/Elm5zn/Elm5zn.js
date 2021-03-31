@@ -19,9 +19,12 @@ import T7wel from "../../images/t7welmontagat.PNG";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Homee from "../../hooks/HomeRouter";
 
 function Elm5zn() {
   const [state, Setstate] = useState(false);
+  const [GoTo] = Homee();
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -50,6 +53,7 @@ function Elm5zn() {
           {" "}
           المخزن{" "}
           <BsFillHouseDoorFill
+          onClick={GoTo}
             style={{
               marginRight: "20px",
               //   color: "#7f29e2",
