@@ -1,0 +1,27 @@
+.PersonalDtaa{
+    display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: minmax(100,auto);
+/* justify-content: space-around; */
+/* grid-gap: 0.35em; */
+}
+
+.PersonalDtaa div{
+    /* background-color: gray; */
+    color: white;
+text-align: right;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: -30px;
+}
+.butto{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+
+}
+.butto button{
+    width: 80px;
+    margin-left: 20px;
+}

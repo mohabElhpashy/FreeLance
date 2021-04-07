@@ -18,12 +18,40 @@ import Halek from '../../images/Sethalek.PNG'
 import Omlaa2 from '../../images/Set3mall2.PNG'
 import Mbe3at from '../../images/Setmbe3at.PNG'
 import SetEl3amlen from '../Settings/El3amleen/El3amleen'
+import Elhalek from '../Settings/Elhalek/Elhalek'
+import AddCustomer from '../Settings/Customers/Customers'
 
 
 
 function Settings() {
 const[Employee,setEmployee]=useState(false)
+const[Rush,setRush]=useState(false)
+const[Customer,setcustomer]=useState(false)
+
+
   const [GoTo] = Homee();
+  const one=()=>{
+    setEmployee(!Employee)
+    setRush(false)
+    setcustomer(false)
+  }
+  const two=()=>{
+    setRush(!Rush)
+    setEmployee(false)
+    setcustomer(false)
+
+  }
+
+ const three=()=>{
+  setcustomer(!Customer)
+  setEmployee(false)
+  setRush(false)
+
+    
+  }
+  //const four=()=>{
+    
+  // }
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -64,14 +92,17 @@ const[Employee,setEmployee]=useState(false)
           />
         </h4>
       </nav>
-      <div className='allData'>
-          <img src={El3amlen} onClick={()=>setEmployee(!Employee)} alt=''/>
-          <img src={Halek} alt=''/>
-          <img src={Omlaa2} alt=''/>
+      <div data-aos="fade-down" className='allData'>
+          <img src={El3amlen} onClick={one} alt=''/>
+          <img src={Halek} onClick={two} alt=''/>
+          <img src={Omlaa2} onClick={three} alt=''/>
           <img src={Mbe3at} alt=''/>
 
       </div>
     {Employee?<SetEl3amlen/>:null}
+    {Rush?<Elhalek/>:null}
+    {Customer?<AddCustomer/>:null}
+
     </div>
   );
 
