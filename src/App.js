@@ -12,6 +12,8 @@ import Elm5zn from "./Components/Elm5zn/Elm5zn";
 import Elwardat from "./Components/Eltkarer/Elwardat/Elwardat";
 import Elmordeen from "./Components/Elmordeen.js/Elomrdeen";
 import Elmontagat from "./Components/Elmontagat/Elmontagat";
+import NoktetElbe3 from './Components/NoktetElbe3/NoktetElbe3'
+import Elwardatt from './Components/Elwardat/Elwardat'
 
 class App extends Component {
   render() {
@@ -27,6 +29,10 @@ class App extends Component {
             <Route path="/Elmordeen" exact component={Elmordeen} />
             <Route path="/Tkarer/Elwardat" exact component={Elwardat} />
             <Route path="/Elmontagat" exact component={Elmontagat} />
+            <Route path="/NoktetElbe3" exact component={NoktetElbe3} />
+            <Route path="/Elwardat" exact component={Elwardatt} />
+
+
           </Switch>
         </Router>
       </div>

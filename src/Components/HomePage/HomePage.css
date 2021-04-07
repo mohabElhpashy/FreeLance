@@ -45,6 +45,7 @@
 
   height: 143px;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 .three {
   background: url("../../images/nokt_ebe3.PNG");
@@ -52,6 +53,8 @@
 
   height: 143px;
   background-repeat: no-repeat;
+  background-color: transparent;
+
 }
 .four {
   background: url("../../images/elm5zn.PNG");

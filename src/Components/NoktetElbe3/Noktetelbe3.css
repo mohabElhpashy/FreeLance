@@ -1,0 +1,81 @@
+        .Noktet_Elbe3_div{
+        width: 80%;
+        height: 400px;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /* border: 1px solid black; */
+            /* border-radius: 8px; */
+            margin: auto;
+            margin-top: 10px;
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px,auto);
+
+
+        }
+        .div1{
+            background-color: white;
+            width: 100%;
+            grid-row: 1/3;
+            grid-auto-rows: minmax(100px,auto);
+            border: 1px solid gainsboro;
+            border-radius: 8px;
+            overflow-y: scroll;
+            height: 284px;
+
+
+            
+        }
+
+        .div2{
+            background-color: #7f29e2;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: minmax(100px,auto);
+            height: 400px;
+            overflow-y: scroll;
+        grid-gap: 1em;
+        grid-column: 2/3;
+        grid-row: 1/3;
+
+        }
+
+        .div2>div{
+            border: #FFF 1px solid;
+            padding: 1em;
+            background-color: white;
+            border-radius: 8px;
+            margin: 0.4em;
+            text-align: center;
+            font-weight: bold;
+                color: gray;
+                margin-bottom: 5px;
+        }
+        
+        .div3 div{
+            background-color: #7f29e2;
+            border-radius: 7px;
+        }
+        .Div_Header{
+            display: flex;
+            justify-content: space-around;
+            background-color: gainsboro;
+            color: black;
+            align-items: center;
+        }.fatora1{
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+    
+        }
+        .fatora1 span {
+            background-color: white;
+            color: black;
+            width: 60px;
+            border-radius: 7px;
+        }
+        .math{
+            color: white;
+        }

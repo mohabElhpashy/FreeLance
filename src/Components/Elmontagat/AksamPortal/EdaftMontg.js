@@ -3,30 +3,27 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
-import "./EdaftM5zoon.css";
+// import "./EdaftM5zoon.css";
 import { BsXCircleFill } from "react-icons/bs";
-import {Consumer} from '../../../hooks/Provider'
+import {Consumer}from '../../../hooks/Provider'
+
 
 const modal = document.getElementById("Portal-root");
-function EdaftM5zoon(props) {
-  
+function EdaftMontag(props) {
+
   return ReactDOM.createPortal(
     <div id="modaal" className="modal">
       <div className="modal_content">
-        <Consumer>
-          {user=>{
-            return <BsXCircleFill
-            onClick={()=>user.Fun()}
-            style={{
-              position: "absolute",
-              color: "white",
-            }}
-          />
-          }}
-        </Consumer>
-       
+      <Consumer>
+             {
+                 user=>{
+     return <BsXCircleFill onClick={()=>user.fun()}style={{position: "absolute",color: "white",}}/>
+                  }
+                         }
+                         
+                         </Consumer>  
         <div className="header">
-          <h2>إضافه مخزون</h2>
+          <h2>إضافه منتج</h2>
         </div>
         <div className="portal_content">
           <div className="left__div">
@@ -89,16 +86,22 @@ function EdaftM5zoon(props) {
           </div>
         </div>
         <div id="buttt">
-          <button
-            style={{
-              backgroundColor: "white",
-              borderRadius: "5px",
-              outline: "none",
-              border: "1px solid white",
-            }}
-          >
-            إلغاء
-          </button>
+            
+            <Consumer>
+                {user=>{
+                    return   <button
+                    style={{
+                      backgroundColor: "white",
+                      borderRadius: "5px",
+                      outline: "none",
+                      border: "1px solid white",
+                    }}
+                    onClick={()=>user.fun()}>
+                    إلغاء
+                  </button>
+                }}
+                
+              </Consumer>
           <button
             style={{
               backgroundColor: "#401571",
@@ -116,4 +119,4 @@ function EdaftM5zoon(props) {
     modal
   );
 }
-export default EdaftM5zoon;
+export default EdaftMontag;

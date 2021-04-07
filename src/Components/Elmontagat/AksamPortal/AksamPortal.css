@@ -1,0 +1,28 @@
+.maaaaaon {
+    overflow-y: scroll;
+    height: 200px;
+  }
+  .modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal_content {
+    padding: 20px;
+    background-color: #6006c5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 2rem;
+    margin-top: 130px;
+    position: relative;
+    width: 800px;
+    height: 443px;
+    box-shadow: -5px -5px 10px gainsboro;
+    justify-self: center;
+  }

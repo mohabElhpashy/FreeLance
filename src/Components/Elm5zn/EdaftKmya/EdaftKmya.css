@@ -1,0 +1,51 @@
+.modalll {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal_contenttt {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #6006c5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 2rem;
+    margin-top: 130px;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    box-shadow: -5px -5px 10px gainsboro;
+    justify-self: center;
+  }
+  .Elkmyaa{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .spaaan{
+    background-color: white;
+    color: black;
+    width: 75px;
+    height: 25px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .Elkmyaa2{
+    margin-top: 40px;
+
+    margin-left: 40px;
+    
+  }
+  .Elkmyaa2 button {
+    margin-left: 10px;
+
+  }

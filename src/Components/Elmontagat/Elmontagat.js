@@ -14,18 +14,33 @@ import Edit from "../../images/edit.PNG";
 import Del from "../../images/delete.PNG";
 import Edaft from "../../images/Edaftmord.PNG";
 import EdaftMord from "../Elmordeen.js/EdafrMord/Edaftmord";
+
 import Homee from "../../hooks/HomeRouter";
 import Tba3a from "../../images/tba3a.PNG";
-import AksamFar3ea from "../Elmontagat/ElAksamFar3eya/AksamFar3ea";
-import AksamR2esea from "../Elmontagat/AksamR2es/AksamR2esea";
+import {Provider}from './../../hooks/Provider'
+import EdaftMontag from '../../images/edaftMontag.PNG'
+import AksamPortalR2esy from './AksamPortal/AksamPortalR2esy'
+import AksamPortalFr3y from './AksamPortal/AksamPortalFr3ey'
+import EdaftMontagg from './AksamPortal/EdaftMontg'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Elmontagat() {
-  const [state, Setstate] = useState(false);
-  const [stateTwo, setstateTwo] = useState(false);
+  const [FAr3ea, SetFar3ea] = useState(false);
+  const [R2esea, SetR2esea] = useState(false);
+  const [Montag, SetMontag] = useState(false);
+
   const [GoTo] = Homee();
+  const exit = () => {
+    SetFar3ea(false)
+  };
+  const exit_Two = () => {
+    SetR2esea(false)
+  };
+  const exit_three=()=>{
+    SetMontag(false)
+  }
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -72,7 +87,7 @@ function Elmontagat() {
           <div data-aos="fade-right" className="rightt_divv">
             <div>
               <button
-                onClick={() => setstateTwo({ stateTwo: true })}
+                onClick={() => SetR2esea(true)}
                 style={{
                   backgroundColor: "#7f29e2",
                   color: "white",
@@ -116,7 +131,7 @@ function Elmontagat() {
                   border: "1px solid white",
                   borderRadius: "5px",
                 }}
-                onClick={() => Setstate({ state: true })}
+                onClick={() => SetFar3ea(true)}
               >
                 عرض الاقسام
               </button>
@@ -147,7 +162,7 @@ function Elmontagat() {
 
         <div className="bot_div">
           <nav data-aos="fade-down" className="nannan" expand="lg">
-            <img style={{ marginLeft: "56px" }} src={Tba3a} alt="" />
+            <img style={{ marginLeft: "56px" }} onClick={()=>SetMontag(true)} src={EdaftMontag} alt="" />
             <Form inline>
               <img style={{ marginRight: "30px" }} src={Del} alt="" />
               <img style={{ marginRight: "30px" }} src={Edit} alt="" />
@@ -204,9 +219,32 @@ function Elmontagat() {
           </div>
         </div>
       </div>
+      {FAr3ea?
+            <Provider value={{fun:exit}}> 
 
-      <AksamFar3ea show={state} />
-      <AksamR2esea showTwo={stateTwo} text="الاقسام الرئيسيه" />
+      
+      <AksamPortalFr3y header="الاقسام الفرعيه" />
+      </Provider> 
+:null
+      }
+
+{R2esea?
+            <Provider value={{fun:exit_Two}}> 
+
+      
+      <AksamPortalR2esy header="الاقسام الرئيسيه" />
+      </Provider> 
+:null
+      }  
+
+      {Montag?
+        <Provider value={{fun:exit_three}}> 
+
+      
+        <EdaftMontagg header="الاقسام الرئيسيه" />
+        </Provider> 
+  :null}
+
     </div>
   );
 }

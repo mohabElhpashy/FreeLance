@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Elm5zn.css";
+import "./Elwardat.css";
 import {
   NavDropdown,
   Nav,
@@ -10,19 +10,18 @@ import {
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
-import EdaftM5zoon from "./EdaftM5zoon/EdaftM5zoon";
+import Edaftward from "./Edaftward/Edaftward";
 // import Tba3a from "../../images/tba3a.PNG";
 import Edit from "../../images/edit.PNG";
 import Del from "../../images/delete.PNG";
 import Edaft from "../../images/edaftm5zoon.PNG";
 import T7wel from "../../images/t7welmontagat.PNG";
-import EdaftKmya from '../Elm5zn/EdaftKmya/EdaftKmya'
 import {Provider} from '../../hooks/Provider'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Homee from "../../hooks/HomeRouter";
 
-function Elm5zn() {
+function Elwaradat() {
   const [state, Setstate] = useState(false);
   const [edaftkmya,setEdaftkmya]=useState(false);
   const [GoTo] = Homee();
@@ -59,7 +58,7 @@ function Elm5zn() {
         </h4>
         <h4 style={{ marginRight: "30px", color: "white" }}>
           {" "}
-          المخزن{" "}
+          الواردات{" "}
           <BsFillHouseDoorFill
           onClick={GoTo}
             style={{
@@ -76,12 +75,10 @@ function Elm5zn() {
 
       <div className="main_divv">
         <Navbar
-          // data-aos="fade-down"
           className="navbarrrr"
           style={{ direction: "rtl" }}
         >
-          {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+        
           <Form className="form" inline>
             <FormControl
               style={{ direction: "rtl" }}
@@ -154,12 +151,11 @@ function Elm5zn() {
           <p>هاينز</p>
         </div>
       </div>
-      {state?<Provider value={{Fun:exit}}><EdaftM5zoon></EdaftM5zoon></Provider>:null}
-      {edaftkmya?<Provider value={{exitt:exit_two}}><EdaftKmya></EdaftKmya></Provider>:null}
+      {state?<Provider value={{Fun:exit}}><Edaftward></Edaftward></Provider>:null}
       
     </div>
   );
 
 }
 
-export default Elm5zn;
+export default Elwaradat;

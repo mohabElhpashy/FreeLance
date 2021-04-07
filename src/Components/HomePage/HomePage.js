@@ -26,6 +26,16 @@ function Home() {
   const elmontagat = () => {
     window.location = "Elmontagat";
   };
+  const NoktetElbe3=()=>{
+    window.location='NoktetElbe3'
+  }
+  const Elwardat=()=>{
+    window.location='Elwardat'
+  }
+  const Exit=()=>{
+    window.location='/'
+
+  }
   return (
     <div className="Homepage">
       <nav className="nav">
@@ -49,22 +59,26 @@ function Home() {
       <div className="content">
         <div className="xx">
           <div
-            data-aos="fade-down-right"
+            data-aos="fade-right"
             className="one"
             onClick={Elmordeen}
           ></div>
           <div
-            data-aos="fade-down-right"
+            data-aos="fade-right"
             className="two"
             onClick={elmontagat}
           ></div>
-          <div data-aos="fade-down-right" className="three"></div>
+          <div data-aos="fade-right"
+            onClick={NoktetElbe3}
+            className="three"></div>
           <div
             onClick={Elm5zn}
-            data-aos="fade-down-right"
+            data-aos="fade-right"
             className="four"
           ></div>
-          <div data-aos="fade-down-right" className="five"></div>
+          <div data-aos="fade-right"
+            onClick={Elwardat}
+           className="five"></div>
         </div>
 
         <div className="xx">
@@ -73,7 +87,7 @@ function Home() {
           <div data-aos="fade-up-left" className="seven"></div>
           <div onClick={grd} data-aos="fade-up-left" className="eight"></div>
           <div data-aos="fade-up-left" onClick={tkarer} className="nine"></div>
-          <div data-aos="fade-up-left" className="ten"></div>
+          <div data-aos="fade-up-left" onClick={Exit} className="ten"></div>
         </div>
       </div>
     </div>

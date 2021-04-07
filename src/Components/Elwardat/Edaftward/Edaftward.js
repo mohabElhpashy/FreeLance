@@ -3,12 +3,12 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
-import "./EdaftM5zoon.css";
+import "./Edaftward.css";
 import { BsXCircleFill } from "react-icons/bs";
 import {Consumer} from '../../../hooks/Provider'
 
 const modal = document.getElementById("Portal-root");
-function EdaftM5zoon(props) {
+function Edaftward(props) {
   
   return ReactDOM.createPortal(
     <div id="modaal" className="modal">
@@ -26,7 +26,7 @@ function EdaftM5zoon(props) {
         </Consumer>
        
         <div className="header">
-          <h2>إضافه مخزون</h2>
+          <h2>إضافه وارد</h2>
         </div>
         <div className="portal_content">
           <div className="left__div">
@@ -116,4 +116,4 @@ function EdaftM5zoon(props) {
     modal
   );
 }
-export default EdaftM5zoon;
+export default Edaftward;
