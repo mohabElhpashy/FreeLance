@@ -12,7 +12,7 @@ function Edaft3aml(props) {
   
   return ReactDOM.createPortal(
     <div id="modaal" className="modal">
-      <div className="modal_contentt">
+      <div className="modal_contentt_t">
         <Consumer>
           {user=>{
             return <BsXCircleFill
