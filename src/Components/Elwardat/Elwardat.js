@@ -11,11 +11,11 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
 import Edaftward from "./Edaftward/Edaftward";
-// import Tba3a from "../../images/tba3a.PNG";
 import Edit from "../../images/edit.PNG";
 import Del from "../../images/delete.PNG";
 import Edaft from "../../images/edaftm5zoon.PNG";
 import T7wel from "../../images/t7welmontagat.PNG";
+import EdaftWard from '../../images/edaftward.PNG'
 import {Provider} from '../../hooks/Provider'
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -113,13 +113,11 @@ function Elwaradat() {
             </Button>{" "}
             <img style={{ marginRight: "30px" }} src={Edit} alt="" />
             <img style={{ marginRight: "30px" }} src={Del} alt="" />
-            <img style={{ marginRight: "30px" }} 
-            onClick={()=>{setEdaftkmya(true)}} 
-            src={T7wel} alt="" />
+           
             <img
               onClick={() => Setstate({ state: true })}
-              style={{ marginRight: "30px" }}
-              src={Edaft}
+              style={{ marginRight: "300px" }}
+              src={EdaftWard}
               alt=""
             />
           </Form>

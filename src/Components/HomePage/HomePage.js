@@ -36,6 +36,10 @@ function Home() {
     window.location='/'
 
   }
+  const Setting =()=>{
+    window.location='Setting'
+
+  }
   return (
     <div className="Homepage">
       <nav className="nav">
@@ -83,7 +87,9 @@ function Home() {
 
         <div className="xx">
           {" "}
-          <div data-aos="fade-up-left" className="six"></div>
+          <div data-aos="fade-up-left" 
+          onClick={Setting}
+           className="six"></div>
           <div data-aos="fade-up-left" className="seven"></div>
           <div onClick={grd} data-aos="fade-up-left" className="eight"></div>
           <div data-aos="fade-up-left" onClick={tkarer} className="nine"></div>

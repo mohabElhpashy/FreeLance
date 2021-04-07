@@ -14,6 +14,7 @@ import Elmordeen from "./Components/Elmordeen.js/Elomrdeen";
 import Elmontagat from "./Components/Elmontagat/Elmontagat";
 import NoktetElbe3 from './Components/NoktetElbe3/NoktetElbe3'
 import Elwardatt from './Components/Elwardat/Elwardat'
+import Settings from './Components/Settings/Setting'
 
 class App extends Component {
   render() {
@@ -31,8 +32,7 @@ class App extends Component {
             <Route path="/Elmontagat" exact component={Elmontagat} />
             <Route path="/NoktetElbe3" exact component={NoktetElbe3} />
             <Route path="/Elwardat" exact component={Elwardatt} />
-
-
+            <Route path='/Setting' exact component={Settings}/>
           </Switch>
         </Router>
       </div>
