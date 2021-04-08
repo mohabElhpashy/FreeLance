@@ -1,41 +1,41 @@
-import React from "react";
-// import React, { useEffect } from "react";
-import { Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ReactDOM from "react-dom";
-// import "./EdaftM5zoon.css";
-import { BsXCircleFill } from "react-icons/bs";
-import {Consumer}from '../../../hooks/Provider'
+    import React from "react";
+    import { Form } from "react-bootstrap";
+    import "bootstrap/dist/css/bootstrap.min.css";
+    import ReactDOM from "react-dom";
+    import { BsXCircleFill } from "react-icons/bs";
+    import {Consumer}from '../../../hooks/Provider'
+    import './EdaftMontag.css'
 
 
-const modal = document.getElementById("Portal-root");
-function EdaftMontag(props) {
+    const modal = document.getElementById("Portal-root");
+    function EdaftMontag(props) {
 
-  return ReactDOM.createPortal(
-    <div id="modaal" className="modal">
-      <div className="modal_content">
-      <Consumer>
-             {
-                 user=>{
-     return <BsXCircleFill onClick={()=>user.fun()}style={{position: "absolute",color: "white",}}/>
-                  }
-                         }
-                         
-                         </Consumer>  
-        <div className="header">
-          <h2>إضافه منتج</h2>
-        </div>
-        <div className="portal_content">
-          <div className="left__div">
-            <div>
-              <h6>القسم</h6>
-              <select id="">
-                <option> </option>
-              </select>
+      return ReactDOM.createPortal(
+        <div id="modaal" className="modal_montag">
+          <div className="modal_content_montag">
+          <Consumer>
+                {
+                    user=>{
+        return <BsXCircleFill onClick={()=>user.fun()}style={{position: "absolute",color: "white",}}/>
+                      }
+                            }
+                            
+                            </Consumer>  
+            <div className="header">
+              <h2>إضافه منتج</h2>
             </div>
+            <div className='PersonalDta'>
             <div>
-              <form style={{ marginTop: "10px" }}>
-                <input type="checkbox" style={{}} />
+            <Form>
+            <Form.Label>القسم</Form.Label>
+        <Form.Control style={{textAlign:'left'}} title='الوظيفه' as="select">
+          <option style={{textAlign:'left'}}></option>
+          <option style={{textAlign:'left'}}>2</option>
+          <option style={{textAlign:'left'}}>3</option>
+          <option style={{textAlign:'left'}}>4</option>
+          <option style={{textAlign:'left'}}>5</option>
+        </Form.Control>
+        <form style={{ marginTop: "10px" }}>
                 <label
                   style={{ marginLeft: "5px", color: "white" }}
                   for="vehicle1"
@@ -44,79 +44,78 @@ function EdaftMontag(props) {
                   توليد باركود ميزان
                 </label>
                 <input type="checkbox" style={{}} />
+
                 <label
                   for="vehicle2"
-                  style={{ marginLeft: "5px", color: "white" }}
+                  style={{ marginLeft: "20px", color: "white" }}
                 >
                   {" "}
                   توليد باركود{" "}
                 </label>
+                <input type="checkbox" style={{}} />
+
               </form>
+
+        <Form.Label>  سعر البيع</Form.Label>
+        <Form.Control style={{width:'300px',textAlign:'right'}} type="text" />
+        <Form.Label>   الوحده </Form.Label>
+        <Form.Control style={{width:'300px',textAlign:'right'}} type="text" />
+        
+        
+    </Form>
             </div>
             <div>
-              <h6>سعر البيع</h6>
-              <input type="text" />
-            </div>{" "}
-            <div>
-              <h6>الوحده</h6>
-              <input type="text" />
+            <Form>
+        <Form.Label>الصنف </Form.Label>
+        <Form.Control style={{width:'300px',textAlign:'right'}} type="text" />
+      
+
+        <Form.Label> باركود</Form.Label>
+        <Form.Control style={{width:'300px',textAlign:'right'}} type="text" />
+        <Form.Label> سعر الشراء </Form.Label>
+        <Form.Control style={{width:'300px',textAlign:'right'}} type="text" />
+        <Form.Label>الكميه </Form.Label>
+        <Form.Control style={{width:'300px',textAlign:'right'}} type="text" />
+        <Form.Label>الخصم </Form.Label>
+        <Form.Control style={{width:'300px',textAlign:'right'}} type="text" />
+      
+    </Form>
             </div>
-          </div>
-          <div className="right__div">
-            <div>
-              <h6>الصنف</h6>
-              <input type="text" />
-            </div>
-            <div>
-              <h6>باركود</h6>
-              <input type="text" />
-            </div>
-            <div>
-              <h6>سعر الشراء</h6>
-              <input type="text" />
-            </div>
-            <div>
-              <h6>الكميه</h6>
-              <input type="text" />
-            </div>
-            <div>
-              <h6>الخصم</h6>
-              <input type="text" />
-            </div>
-          </div>
-        </div>
-        <div id="buttt">
+
             
-            <Consumer>
-                {user=>{
-                    return   <button
-                    style={{
-                      backgroundColor: "white",
-                      borderRadius: "5px",
-                      outline: "none",
-                      border: "1px solid white",
-                    }}
-                    onClick={()=>user.fun()}>
-                    إلغاء
-                  </button>
-                }}
+            </div> 
+            <div id="buttt">
                 
-              </Consumer>
-          <button
-            style={{
-              backgroundColor: "#401571",
-              borderRadius: "5px",
-              color: "white",
-              outline: "none",
-              border: "1px solid  #401571",
-            }}
-          >
-            إضافه
-          </button>
-        </div>
-      </div>
-    </div>,
-    modal
-  );
-}
-export default EdaftMontag;
+                <Consumer>
+                    {user=>{
+                        return   <button
+                        style={{
+                          backgroundColor: "white",
+                          borderRadius: "5px",
+                          outline: "none",
+                          border: "1px solid white",
+                        }}
+                        onClick={()=>user.fun()}>
+                        إلغاء
+                      </button>
+                    }}
+                    
+                  </Consumer>
+              <button
+                style={{
+                  backgroundColor: "#401571",
+                  borderRadius: "5px",
+                  color: "white",
+                  outline: "none",
+                  border: "1px solid  #401571",
+                }}
+              >
+                إضافه
+              </button>
+            </div>
+          </div>
+        </div>,
+        modal
+      );
+    }
+    export default EdaftMontag;

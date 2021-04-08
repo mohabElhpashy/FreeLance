@@ -1,0 +1,33 @@
+.modal_montag {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal_content_montag {
+    padding: 20px;
+    background-color: #6006c5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 2rem;
+    margin-top: 130px;
+    position: relative;
+    width: 800px;
+    height: 480px;
+    box-shadow: -5px -5px 10px gainsboro;
+    justify-self: center;
+  }
+  .Check{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  .Check div {
+      display: flex;
+      justify-content: space-around;
+  }

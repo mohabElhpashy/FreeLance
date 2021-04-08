@@ -6,9 +6,10 @@ import LoginIMg from "../../images/Group 6.png";
 import Header from "../../images/un.png";
 import Header2 from "../../images/Group 19.png";
 import { BsFillUnlockFill, BsFillPersonFill } from "react-icons/bs";
+import { FaFacebook,  } from "react-icons/fa";
 
-// import AOS from "aos";
-import "aos/dist/aos.css";
+
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 class SignIN extends Component {
@@ -41,11 +42,21 @@ class SignIN extends Component {
                 }}
               />
             </div>
+            <p style={{fontWeight:'bold',marginTop:'-5px',marginLeft:'70px'}}>for point of sale management system</p>
 
-            <img alt="sora1" src={LoginIMg} style={{ width: "100%" }} />
+            <img alt="sora1" src={LoginIMg} style={{ width: "65%" }} />
+            <div className='FAcebook'>
+                <FaFacebook size={30} color='blue'/>
+                <img alt="sora"
+                  style={{ width: "30px", transform: "rotate(45deg)" }}
+                  src={Header}/>
+                  <p style={{    fontSize: '11px',
+    marginTop: '15px',fontWeight:'bold'}}>Copyright © 2020 by tounga</p>
+            </div>
+
           </div>
           <div className="right_div">
-            <h1 style={{ color: "white" }}>Sign In</h1>
+            <h1 style={{ color: "white",marginLeft:'-220px',fontWeight:'bold',marginTop:'15px' }}>Sign In</h1>
 
             <div className="Signin">
               <h1>

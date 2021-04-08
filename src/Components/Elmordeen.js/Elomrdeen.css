@@ -10,7 +10,7 @@
   margin-top: 130px;
   position: relative;
   width: 800px;
-  height: 443px;
+  height: 460px;
   box-shadow: -5px -5px 10px gainsboro;
   justify-self: center;
   justify-content: space-around;
@@ -49,8 +49,9 @@
 }
 .botttom {
   position: absolute;
-  left: 70px;
+  left: 55px;
   bottom: 0;
+  margin-top: -50px;
 }
 
 .botttom img {

@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
 import "./EdaftKmya.css";
 import { BsXCircleFill } from "react-icons/bs";

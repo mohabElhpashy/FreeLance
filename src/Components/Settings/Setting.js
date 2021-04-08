@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Setting.css";
-import {
-  NavDropdown,
-  Nav,
-  Navbar,
-  FormControl,
-  Form,
-  Button,
-} from "react-bootstrap";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
 import AOS from "aos";

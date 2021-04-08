@@ -54,6 +54,8 @@
   height: 384px;
   border-radius: 15px;
   margin: auto;
+  margin-top: 25px;
+
 }
 .Loginbox {
   margin-top: 70px;
@@ -81,4 +83,13 @@ input[type="password"] {
   background-color: white;
   color: #611eac;
   outline: none;
+}
+
+.FAcebook{
+  margin-top: 60px;
+  margin-left: 35px;
+
+}
+.FAcebook img {
+  margin-left: 30px;
 }
