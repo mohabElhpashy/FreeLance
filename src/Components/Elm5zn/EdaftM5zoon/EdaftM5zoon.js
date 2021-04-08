@@ -1,6 +1,4 @@
 import React from "react";
-// import React, { useEffect } from "react";
-import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
 import "./EdaftM5zoon.css";

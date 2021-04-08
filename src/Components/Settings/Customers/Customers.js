@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-// import "./Elwaedat.css";
 import { Navbar, FormControl, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BsFillPersonFill,
-  BsFillHouseDoorFill,
-  BsArrowLeftShort,
-  BsSearch,
-} from "react-icons/bs";
+// import {
+//   BsFillPersonFill,
+//   BsFillHouseDoorFill,
+//   BsArrowLeftShort,
+//   BsSearch,
+// } from "react-icons/bs";
 import Tba3a from "../../../images/AddCustomer.PNG";
 import Edit from "../../../images/edit.PNG";
 import Del from "../../../images/delete.PNG";

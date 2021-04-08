@@ -18,6 +18,12 @@ function Eltkarer() {
   const elwardat = () => {
     window.location = "/Tkarer/Elwardat";
   };
+  const elhaalek = () => {
+    window.location = "/Tkarer/elhalek";
+  };
+  const elmsrofaat = () => {
+    window.location = "/Tkarer/elmsrofat";
+  };
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -62,9 +68,9 @@ function Eltkarer() {
         <h3 style={{ color: "#616161" }}>تعريف التقارير</h3>
 
         <div data-aos="flip-left" className="inner_cont">
-          <div className="first"></div>
+          <div className="first" onClick={elmsrofaat}></div>
           <div className="second" onClick={elwardat}></div>
-          <div className="third"></div>
+          <div className="third" onClick={elhaalek}></div>
         </div>
         <div className="date_picker">
           <div>

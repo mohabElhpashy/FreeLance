@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Elgard.css";
-// import { Navbar, FormControl, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
 import Datepicker from "react-datepicker";
-
 import "react-datepicker/dist/react-datepicker.css";
 import Homee from "../../hooks/HomeRouter";
 import AOS from "aos";
@@ -13,9 +11,7 @@ function Elgard() {
   const [selectDate, setselectDate] = useState(new Date());
   const [GoTo] = Homee();
 
-  //   const elwardat = () => {
-  //     window.location = "/Tkarer/Elwardat";
-  //   };
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -44,13 +40,12 @@ function Elgard() {
           {" "}
           التقارير{" "}
           <BsFillHouseDoorFill
+          className='homee'
             onClick={GoTo}
             style={{
               marginRight: "20px",
-              //   color: "#7f29e2",
               backgroundColor: "#7f29e2",
               border: "1px solid #7f29e2",
-              //   borderRadius: "50px",
             }}
             size={45}
           />
@@ -71,7 +66,6 @@ function Elgard() {
               selected={selectDate}
               onChange={(date) => setselectDate(date)}
               dateFormat="dd/MM/yy"
-              //   minDate={new Date()}
             />
           </div>
           <div>

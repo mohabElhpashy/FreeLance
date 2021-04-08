@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -14,7 +13,12 @@ import Elmordeen from "./Components/Elmordeen.js/Elomrdeen";
 import Elmontagat from "./Components/Elmontagat/Elmontagat";
 import NoktetElbe3 from './Components/NoktetElbe3/NoktetElbe3'
 import Elwardatt from './Components/Elwardat/Elwardat'
+import Elhaaalek from './Components/Eltkarer/Elhaaaalek/Elhaalek'
+import Elmsaaaref from './Components/Eltkarer/Elmsrooofat/Elmsroooofat'
+
+
 import Settings from './Components/Settings/Setting'
+import Elmsaref from './Components/Elmsaaref/Elmsareef'
 
 class App extends Component {
   render() {
@@ -29,10 +33,18 @@ class App extends Component {
             <Route path="/Store" exact component={Elm5zn} />
             <Route path="/Elmordeen" exact component={Elmordeen} />
             <Route path="/Tkarer/Elwardat" exact component={Elwardat} />
+
+            <Route path="/Tkarer/elhalek" exact component={Elhaaalek} />
+            <Route path="/Tkarer/elmsrofat" exact component={Elmsaaaref} />
+
+
+
             <Route path="/Elmontagat" exact component={Elmontagat} />
             <Route path="/NoktetElbe3" exact component={NoktetElbe3} />
             <Route path="/Elwardat" exact component={Elwardatt} />
             <Route path='/Setting' exact component={Settings}/>
+            <Route path='/Elmsaref' exact component={Elmsaref}/>
+
           </Switch>
         </Router>
       </div>

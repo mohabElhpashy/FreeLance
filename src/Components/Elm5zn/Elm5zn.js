@@ -11,7 +11,6 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
 import EdaftM5zoon from "./EdaftM5zoon/EdaftM5zoon";
-// import Tba3a from "../../images/tba3a.PNG";
 import Edit from "../../images/edit.PNG";
 import Del from "../../images/delete.PNG";
 import Edaft from "../../images/edaftm5zoon.PNG";
@@ -64,10 +63,8 @@ function Elm5zn() {
           onClick={GoTo}
             style={{
               marginRight: "20px",
-              //   color: "#7f29e2",
               backgroundColor: "#7f29e2",
               border: "1px solid #7f29e2",
-              //   borderRadius: "50px",
             }}
             size={45}
           />

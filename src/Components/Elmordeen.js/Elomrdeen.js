@@ -18,10 +18,13 @@ import Homee from "../../hooks/HomeRouter";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import {Provider} from '../../hooks/Provider';
 function Elmordeen() {
   const [state, Setstate] = useState(false);
   const [GoTo] = Homee();
+  const Exit=()=>{
+    Setstate(false)
+  }
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -137,7 +140,7 @@ function Elmordeen() {
           <p>محمود خليل</p>
         </div>
       </div>
-      <EdaftMord show={state} />
+     {state?<Provider value={{Fun:Exit}}><EdaftMord/></Provider>:null}
     </div>
   );
 }

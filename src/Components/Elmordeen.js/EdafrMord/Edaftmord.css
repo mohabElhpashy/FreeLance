@@ -1,0 +1,17 @@
+.PersonalDAta{
+    display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: minmax(100,auto);
+/* justify-content: space-around; */
+grid-gap: 0.35em;
+}
+
+.PersonalDAta div{
+    color: white;
+text-align: right;
+display: flex;
+flex-direction: column;
+/* align-items: flex-end; */
+margin-bottom: -30px;
+margin-left:60px ;
+}

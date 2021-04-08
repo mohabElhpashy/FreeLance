@@ -12,7 +12,7 @@ function Home() {
     });
   });
   const tkarer = () => {
-    window.location = "Tkarer";
+    window.location = "Tkarer"; 
   };
   const grd = () => {
     window.location = "Elgard";
@@ -38,6 +38,10 @@ function Home() {
   }
   const Setting =()=>{
     window.location='Setting'
+
+  }
+  const Elmsrofat =()=>{
+    window.location='Elmsaref'
 
   }
   return (
@@ -90,7 +94,9 @@ function Home() {
           <div data-aos="fade-up-left" 
           onClick={Setting}
            className="six"></div>
-          <div data-aos="fade-up-left" className="seven"></div>
+          <div data-aos="fade-up-left"
+          onClick={Elmsrofat}
+          className="seven"></div>
           <div onClick={grd} data-aos="fade-up-left" className="eight"></div>
           <div data-aos="fade-up-left" onClick={tkarer} className="nine"></div>
           <div data-aos="fade-up-left" onClick={Exit} className="ten"></div>
